@@ -6,7 +6,7 @@ public class Main
 {
     public static void main(String[] args)
     {
-        ArrayList<Worker> workers = new ArrayList<>();
+        ArrayList<Contract> workers = new ArrayList<>();
         workers.add(new Student("Bruce", "Lee", "Shaolin School"));
         workers.add(new Employee("Gates" , "Bill", 1000, 20));
         workers.add(new SubContractor("Barak", "Obama", 59));

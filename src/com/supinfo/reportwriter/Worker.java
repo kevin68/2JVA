@@ -1,6 +1,6 @@
 package com.supinfo.reportwriter;
 
-public abstract class Worker
+public abstract class Worker implements Contract
 {
     protected String firstname;
     protected String lastname;
@@ -12,7 +12,12 @@ public abstract class Worker
     }
 
     public abstract String displayInfos();
-
+    
+    public String stringValue()
+    {
+        return fullname() + "\n" + displayInfos();
+    }
+    
     public String fullname()
     {
         return lastname + " " + firstname;

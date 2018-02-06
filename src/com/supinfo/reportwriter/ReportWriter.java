@@ -4,18 +4,18 @@ import java.util.List;
 
 public class ReportWriter
 {
-    private List<Worker> workers;
+    private List<Contract> contracts;
 
-    public ReportWriter(List<Worker> workers)
+    public ReportWriter(List<Contract> contracts)
     {
-        this.workers = workers;
+        this.contracts = contracts;
     }
 
     public String generateReport(boolean webVersion)
     {
         String result = "GreatReport\n-------------------\n\n";
         int counter = 0;
-        for(Worker w : this.workers)
+        for(Contract w : this.contracts)
         {
 
             if(counter % (webVersion ? 2 : 3) == 0 && counter != 0)
@@ -29,8 +29,7 @@ public class ReportWriter
                     result += "          page " + ((counter - (counter % 3)) / 3) + "\n\n";
                 }
             }
-            result += w.fullname() + "\n";
-            result += w.displayInfos() + "\n\n";
+            result += w.stringValue() + "\n";
             counter++;
         }
         if(webVersion)
