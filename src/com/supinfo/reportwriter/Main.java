@@ -14,7 +14,7 @@ public class Main
         workers.add(new Volounteer("John", "Doe"));
         
         ReportWriter rwriter = new ReportWriter(workers);
-        String report = rwriter.generateReport();
+        String report = rwriter.generateReport(true);
         System.out.println(report);
     }
 }
