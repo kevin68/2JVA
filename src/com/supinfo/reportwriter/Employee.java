@@ -6,8 +6,7 @@ public class Employee extends Worker
     
     public Employee(String firstname, String lastname, int salary, int holidays)
     {
-        this.firstname = firstname;
-        this.lastname = lastname;
+        super(firstname, lastname);
         this.salary = salary;
         this.holidays = holidays;
     }

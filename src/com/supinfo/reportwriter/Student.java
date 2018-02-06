@@ -6,8 +6,7 @@ public class Student extends Worker
     
     public Student(String firstname, String lastname, String school)
     {
-        this.firstname = firstname;
-        this.lastname = lastname;
+        super(firstname, lastname);
         this.school = school;
     }
 

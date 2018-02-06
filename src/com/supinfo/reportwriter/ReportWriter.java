@@ -26,6 +26,7 @@ public class ReportWriter
             result += w.displayInfos() + "\n\n";
             counter ++;
         }
+        result += "          page " + ((counter-(counter%3))/3+1) + "\n\n";
         return result;
     }
 }

@@ -6,8 +6,7 @@ public class SubContractor extends Worker
     
     public SubContractor(String firstname, String lastname, int cost)
     {
-        this.firstname = firstname;
-        this.lastname = lastname;
+        super(firstname, lastname);
         this.cost = cost;
     }
     
