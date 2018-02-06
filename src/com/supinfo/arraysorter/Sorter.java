@@ -73,11 +73,10 @@ public class Sorter
     
     public static void main(String[] args)
     {
-        Random rand = new Random();
         int[] values = new int[10];
         for(int i = 0; i < values.length; i++)
         {
-            values[i] = rand.nextInt(100);
+            values[i] = (int)(Math.random()*100);
         }
         
         System.out.println("Unsorted:");
@@ -86,10 +85,10 @@ public class Sorter
         System.out.println("Bubble sort:");
         displayArray(bubbleSort(values));
         
-        /*System.out.println("Selection sort:");
+        System.out.println("Selection sort:");
         displayArray(selectionSort(values));
         
         System.out.println("Insertion sort:");
-        displayArray(insertionSort(values));*/
+        displayArray(insertionSort(values));
     }
 }
