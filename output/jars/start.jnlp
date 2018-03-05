@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="file://localhost/C:/Users/baume/Desktop/">
+		<information>
+			<title>A demo</title>
+			<vendor>SUPINFO</vendor>
+		</information>
+		<offline-allowed />
+		<security>
+			<all-permissions />
+		</security>
+		<resources>
+			<jar href="jws.jar" />
+		</resources>
+		<application-desc main-class="JWSDemo" />
+</jnlp>
