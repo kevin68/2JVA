@@ -69,7 +69,7 @@ public class Launcher
             try
             {
                 //On attend 3 secondes
-                Thread.sleep(3000);
+                Thread.sleep(100);
             }
             catch(InterruptedException e)
             {
